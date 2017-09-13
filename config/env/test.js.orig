@@ -1,0 +1,18 @@
+'use strict';
+
+module.exports = {
+  karma: {
+<<<<<<< HEAD
+    browsers: ['Chrome'], // add more browsers i.e. Firefox, IE...
+=======
+    browsers: ['Firefox'], // add more browsers i.e. Firefox, IE...
+>>>>>>> ac2b81ffa8f568f342f56d9d3b98c5ebc54f3646
+    preprocessors: {
+      'lib/*.js': 'coverage',
+      'test/*.html' : ['html2js']
+    },
+    reporters: ['progress', 'coverage'],
+    autoWatch: false,
+    singleRun: true
+  }
+};
