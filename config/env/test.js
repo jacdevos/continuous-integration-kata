@@ -2,7 +2,7 @@
 
 module.exports = {
   karma: {
-    browsers: ['PhantomJS'], // add more browsers i.e. Firefox, IE...
+    browsers: ['Firefox'], // add more browsers i.e. Firefox, IE...
     preprocessors: {
       'lib/*.js': 'coverage',
       'test/*.html' : ['html2js']
