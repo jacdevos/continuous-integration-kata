@@ -28,6 +28,9 @@ describe('Calculator', function () {
         },
         clickSubtract: function () {
             document.getElementById('subtract').click();
+        },
+        clickMultiply: function () {
+            document.getElementById('multiply').click();
         }
     };
 
@@ -53,11 +56,18 @@ describe('Calculator', function () {
         controls.result.should.equal('3');
     });
 
-    it('should calculate 3 for 4 + 3', function () {
+    it('should calculate 1 for 4 - 3', function () {
         controls.x = 4;
         controls.y = 3;
         controls.clickSubtract();
         controls.result.should.equal('1');
+    });
+
+    it('should calculate 10 for 2 * 5', function () {
+        controls.x = 2;
+        controls.y = 5;
+        controls.clickSubtract();
+        controls.result.should.equal('10');
     });
 
     it('should calculate zero for invalid x value', function () {
